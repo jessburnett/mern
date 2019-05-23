@@ -12,4 +12,10 @@ router.get("/", (req, res) => {
     .then(items => res.json(items));
 });
 
+// @route POST api/items
+// @desc Create a Post
+router.post("/", (req, res) => {
+  const newItem = new Item();
+});
+
 module.exports = router;
